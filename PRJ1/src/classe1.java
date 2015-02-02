@@ -23,11 +23,11 @@ public class classe1 {
 		
 	    for (int i = 0; i < matran.length; i++) {
 	    	for (int u = 0; u < matran.length ; u++ ) {
-	    			matran[i][u] =  Math.random() * 10 -5;
+	    			matran[i][u] =  Math.random() * 10 ;
 	    	}
 	    }
 
-	    //mettre des nombres négatifs!
+	    
 	    
 	    //System.out.println(Arrays.deepToString(matran)) ;
 	    
@@ -70,42 +70,9 @@ public class classe1 {
 		//installer jama; vectorz, colt??
 		//resultat = vectest * ranmat.matriceRandom(args) ;
 		
-		boolean o = false ;
+		Matrix C = B.times(A) ;
 		
-		Matrix seu = new Matrix (vectest, 5, 1);
-		
-		for ( int i = 0 ; i<1050 ; i++ ) {
-			
-			
-			Matrix C = B.times(seu) ;
-		
-			C.print(6, 5);
-			
-			//seuillage
-			for (int u = 0; u < 5 ; u++) {
-				if ( C.get(u, 0) < 0 )
-					C.set(u, 0, -1.0);
-				else C.set(u, 0, 1.0);
-		    	   
-		    }
-			
-			
-			System.out.print("C seuillée");
-			C.print(6, 5);
-			seu.print(6, 5);
-			A.print(6,5);
-			
-			if ( seu.equals(A) ) {
-				System.out.print("cassé!!!!!!!!!!!!!!!!!!!!!!!");
-				break;
-				//o = true ;	
-				//pige pas, marche qd les matrices sont différentes mais pas qd egales...
-			}
-			
-			seu = C ;
-			
-			
-		}
+		C.print(6, 5);
 		
 	}
 }
