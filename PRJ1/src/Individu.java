@@ -8,9 +8,7 @@ import java.util.*;
 import Jama.Matrix;
 
 /**
- * Desk ssdjsdjfnsd,fnn
- * 
- * @author Sofiane
+ *
  *
  */
 public class Individu {
@@ -60,10 +58,10 @@ public class Individu {
 			// Seuillage en (1, -1 ou 0) des vecteurs obtenus apres
 			// multiplication
 			produit = Utils.seuillerVecteur(produit);
-			System.out.println(" vecteur seuillé");
+			System.out.println(" vecteur seuillÃ©");
 
 			// Matrix avantMat = vecteur;
-			// comparaison du produit seuillé avec le vecteur
+			// comparaison du produit seuillÃ© avec le vecteur
 			vecteur = listVecteurs.get(listVecteurs.size()-1);
 
 			boolean vectEgaleProduit = Utils.comparerVecteur(vecteur, produit);
@@ -86,7 +84,7 @@ public class Individu {
 					// si je le trouve je le garde pas et je break (parce que je
 					// vais avoir le meme cercle des vecteurs par la suite)
 					if (vectEgaleProduit) {
-						System.out.println("vecteur éliminé");
+						System.out.println("vecteur Ã©liminÃ©");
 						System.out.println("l'individu n'est pas viable");
 						viable=false;
 						fin = true;
@@ -98,7 +96,7 @@ public class Individu {
 				//
 				if (fin == false) {
 					// on l'ajoute a la liste et je continu.
-					System.out.println("vecteur ajouté à la liste");
+					System.out.println("vecteur ajoutÃ© Ã  la liste");
 					System.out.println("on recommence");
 					vecteur = produit;
 					listVecteurs.add(vecteur);
@@ -113,13 +111,13 @@ public class Individu {
 	}
 
 	/**
-	 * méthode qui cree des mutations de maniere aleatoire chez les individus
+	 * mÃ©thode qui cree des mutations de maniÃ¨re alÃ©atoire chez les individus
 	 * 
 	 * @return un boolean
 	 */
 	public boolean creerMutationAleatoire() {
 		Random random = new Random();
-		// seuil pour mutation d'un seul élément
+		// seuil pour mutation d'un seul ï¿½lï¿½ment
 		double seuilMut = random.nextDouble();
 		// seuil pour mutation KO
 		double seuilKO = random.nextDouble();

@@ -9,10 +9,6 @@ import Jama.Matrix;
  * 
  */
 
-/**
- * @author Sofiane
- *
- */
 public class Traitement {
 
 	/**
@@ -38,7 +34,7 @@ public class Traitement {
 	
 	
 	/**
-	 * Méthode random qui génere les parents 
+	 * MÃ©thode random qui gÃ©nere les parents
 	 * @return 
 	 */
 	public Individu creerParent(){
@@ -62,7 +58,7 @@ public class Traitement {
 
 	
 	/**
-	 * Méthode qui genere une liste des parents viables
+	 * MÃ©thode qui genere une liste des parents viables
 	 * @param args
 	 * @return une liste
 	 */
@@ -117,7 +113,7 @@ public class Traitement {
 	}
 	
 	/**
-	 * Méthode qui permet de génerer des fils
+	 * MÃ©thode qui permet de gÃ©nerer des fils
 	 * 
 	 * @param args
 	 */
@@ -130,8 +126,8 @@ public class Traitement {
 		Individu fils;
 		while (i < 300) {
 			Random ran = new Random();
-			int a = ran.nextInt(i); // tirer aléatoirement le parent 1 de la liste ListViables
-			int b = ran.nextInt(i); // tirer aléatoirement le parent 2 de la liste ListViables
+			int a = ran.nextInt(i); // tirer alÃ©atoirement le parent 1 de la liste ListViables
+			int b = ran.nextInt(i); // tirer alÃ©atoirement le parent 2 de la liste ListViables
 			pere = ListParentsViables.get(a);
 			mere = ListParentsViables.get(b);
 			

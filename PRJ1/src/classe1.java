@@ -7,7 +7,7 @@ import Jama.Matrix; ;
 public class classe1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub          ??? keep it??
 
 		classe1 ranmat = new classe1() ;
 		//ranmat.matriceRandom(args) ;
@@ -63,7 +63,7 @@ public class classe1 {
         Matrix B = new Matrix(ranmat.matriceRandom(args), 5 , 5);
 		
 		//System.out.println(Arrays.deepToString(ranmat.matriceRandom(args)));
-        //en imprimant, connard, tu redemande d'autre nombres aléatoires...
+        //en imprimant, connard, tu redemande d'autre nombres al?atoires...
         
 		B.print(6, 5);
 		

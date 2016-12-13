@@ -1,13 +1,9 @@
 import Jama.Matrix;
 
 /**
- * 
- */
-
-/**
- * @author Sofiane
  *
  */
+
 public class Utils {
 
 	
