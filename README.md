@@ -1,10 +1,10 @@
-#UE Projet
+# UE Projet
 Simulation of evolution, gene regulation network. Each individual is represented by its gene regulation network, a square matrix.
 Rows of the matrix represents regulations of genes, columns regulations that a gene do to the others.
 A gene is defined by the combination of a rows and columns (from the diagonal)
 
 
-##Principles
+## Principles
 - Regulation network:
     ![regu](./results/regulation.PNG)
     - Each line corresponds to a gene, with the regulations that it receives, the sum of the line is the expression level of the gene
@@ -34,7 +34,7 @@ A gene is defined by the combination of a rows and columns (from the diagonal)
 
 
 
-#Inputs
+# Inputs
 - **Number of generations:** Number of iteration before the program ends
 - **Population size:** Number of individuals to be generated at each
 generation
@@ -44,7 +44,7 @@ generation
 - **Max number of mutation per individuals**
 - **Recording step:** Append a line in the output each n generations
 
-#Output
+# Output
 CSV file, with each line corresponding to a generation, and with columns:
 
 - `% de viabilite individu` : Represent the % of non viable matrix
@@ -67,20 +67,19 @@ that a matrix is viable.
 
 ![ko_unique](./results/unique.PNG)
 
-#Issues
-##IntelliJ error
+# Issues
+## IntelliJ error
 - Be sure to have ``"Inherit project compile output path"`` either class
 arent found
 
-##Known issues
+## Known issues
 - The `scanner` (keystroke recording) has a bug with  `exeprj1.jar`,
 so edit the parameters in ``ClassePRJmain.java`` and run from sources
 
-##TODO
+## TODO
 - [ ] Fancier probability input
 - [ ] Multithreading
-- [ ] Create of second branch
-- [ ] Other methods to identify a row/gene (hash, mem addr..)
+- [X] Other methods to identify a row/gene (hash, mem addr..)
 - [ ] Create a phenotype object?
 - [ ] Create a config file, or commandline arguments, with help
 
